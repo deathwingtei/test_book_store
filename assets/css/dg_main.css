@@ -93,11 +93,25 @@ span.carousel-control-prev-icon {
 
 footer
 {
+
+}
+
+#footer_top
+{
+    width:100%;
     background-color:#815d51;
     padding:30px;
     color:white;
     line-height: 40px;
     font-weight: 200;
+}
+
+#footer_copyright
+{
+    min-height: 60px;
+    width:100%;
+    color: #815d51;
+    background-color: white;
 }
 
 .font_footer_regular
@@ -116,6 +130,7 @@ footer
     margin-left:10px;
     margin-top:20px;
 }
+
 
 @media only screen and (max-width: 767px) {
     .carousel-control-next, .carousel-control-prev {
