@@ -3,6 +3,7 @@
     #f7ebdf
     #fefdfb
     #fbf4ee
+    #fbd11b yellow
 */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -174,6 +175,42 @@ span.carousel-control-prev-icon {
     background-color: #fbf4ee;
 }
 
+.card.card-newbook{
+    margin: 0 1.5em 0 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+
+#promotion_book
+{
+    background-color: #fbf4ee;
+}
+
+
+#bast_seller_book
+{
+    background-color: #815d51;
+    color: white;
+}
+
+.bast_seller-link
+{
+    color: white;
+
+}
+
+.nextall
+{
+    font-size: 36px;
+    position: absolute;
+    margin-top: -9px;
+}
+
+.lastlink
+{
+    
+}
+
 
 footer
 {
@@ -228,6 +265,45 @@ footer
     cursor: pointer;
 }
 
+/* The ribbon */
+.ribbon-book {
+    font-size:10px;
+    font-weight: 300;
+    padding: 0 0 10px 0;
+    position: absolute;
+    right: 1em;
+    top: -0em;
+    width: 40px;
+}
+.ribbon-book div {
+    background: #fbd11b;
+    background: linear-gradient(#fbd11b 0%, #fbd11b 100%);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+.ribbon-book div:after {
+    border-left: 20px solid #fbd11b;
+    border-right: 20px solid #fbd11b;
+    border-bottom: 10px solid transparent;
+    bottom: 0;
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+
+
+@media only screen and (max-width: 1399px) {
+    #search-content
+    {
+        height: auto !important;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .carousel-control-next, .carousel-control-prev {
         width: 15%;
@@ -236,4 +312,47 @@ footer
     {
         height: auto;
     }
+    
+    #search-content
+    {
+        height: auto;
+    }
+}
+
+
+/* Multiple Carusel */
+
+.carousel-inner-mul .carousel-item.active,
+.carousel-inner-mul .carousel-item-next,
+.carousel-inner-mul .carousel-item-prev {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner-mul .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner-mul .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner-mul .carousel-item-end.active,
+    .carousel-inner-mul .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner-mul .carousel-item-start.active, 
+    .carousel-inner-mul .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+
+.carousel-inner-mul .carousel-item-end,
+.carousel-inner-mul .carousel-item-start { 
+    transform: translateX(0);
 }
