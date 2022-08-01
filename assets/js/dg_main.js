@@ -20,7 +20,7 @@ let items = document.querySelectorAll('.carousel-mul .carousel-item')
 })
 
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel-book').owlCarousel({
         loop:true,
         margin:30,
         nav:false,
@@ -38,5 +38,24 @@ $(document).ready(function(){
                 items:5,
             }
         }
-    })
+    });
+    $('.owl-carousel-news').owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        dots:false,
+        autoWidth:false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:3,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    });
 });
