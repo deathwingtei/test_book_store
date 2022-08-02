@@ -109,6 +109,10 @@ span.carousel-control-prev-icon {
 
 
 /* main set */
+.register-container
+{
+    background-color: #fefefc;
+}
 
 #new_book
 {
@@ -164,6 +168,50 @@ span.carousel-control-prev-icon {
     margin-top: -9px;
 }
 
+.arrow_left
+{
+    color:#815d51
+}
+
+.btn_arrow
+{
+    background-color: #fefdfb;
+    width: 40px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0px 40px rgba(51, 51, 51, 0.1);
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+#emailHelp
+{
+    color: red;
+}
+
+.form-control-register
+{
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: 0 0px 40px rgba(51, 51, 51, 0.1);
+    -webkit-filter: drop-shadow(0.5px 0.5px 0.5px #815d51);
+    filter: drop-shadow(0.5px 0.5px 0.5px #815d51);
+}
+
+.btn-brown
+{
+    margin-left:20px;
+    width: 90%;
+    height: 60px;
+    border-radius: 15px;
+    background-color:#815d51;
+    border-color:#815d51;
+}
+
+.btn-brown:hover
+{
+    background-color:#815d51;
+    border-color:#815d51;
+}
 
 /* promotion card set */
 .setbody
@@ -235,6 +283,13 @@ span.carousel-control-prev-icon {
 
 
 /* card set */
+
+.main-input-form-card
+{
+    background-color: white;
+    color: #815d51;
+    font-size: 22px;
+}
 
 .card.card-newbook{
     margin: 0 1.5em 0 0;
@@ -609,6 +664,11 @@ right: 0;
     {
         padding:0px !important;
         padding-left:20px !important;
+    }
+    .btn-brown
+    {
+        margin-top:20px;
+
     }
 }
 

@@ -28,7 +28,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto ms-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
+							<a class="nav-link " aria-current="page" href="#">หน้าหลัก</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">เกี่ยวกับเรา</a>
@@ -40,7 +40,7 @@
 							<a class="nav-link" href="#">สมัครเป็นนักอ่าน</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="register.html">สมัครเป็นนักเขียน</a>
+							<a class="nav-link active" href="register.html">สมัครเป็นนักเขียน</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link btn  btnlogin" href="register.html">
@@ -53,7 +53,128 @@
 		</nav>
 	</header>
 	<main>
-
+		<div id="mainslide" class="carousel slide" data-bs-ride="true">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="https://via.placeholder.com/1920x400.png/DDBEA9/ffffff?text=Writer Register" class="d-block w-100" alt="สมัครเป็นนักเขียน">
+				</div>
+			</div>
+		</div>
+		<div class="container register-container ">
+			<div class="row mt-5 ms-5">
+				<div class="col-12">
+					<button class="btn btn_arrow"><i class="fa-solid fa-arrow-left-long arrow_left"></i></button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="card main-input-form-card p-5 m-5">
+						<div class="card-body">
+							<form>
+								<div class="mb-3">
+									<label for="name" class="form-label mb-4 ">ชื่อ</label>
+									<input type="text" class="form-control form-control-register" id="name">
+								</div>
+								<div class="mb-3">
+									<label for="sname" class="form-label mb-4 mt-4">นามสกุล</label>
+									<input type="text" class="form-control form-control-register" id="sname">
+								</div>
+								<div class="mb-3">
+									<label for="email" class="form-label mb-4 mt-4">อีเมล (สำหรับ Login)</label>
+									<input type="email" class="form-control form-control-register" id="email" aria-describedby="emailHelp">
+									<div id="emailHelp" class="form-text">*ระบบจะทำการสร้างรหัสผ่าน และส่งไปยังอีเมลนักเขียนให้อัตโนมัติ</div>
+								</div>
+								<div class="mb-3">
+									<label for="tel" class="form-label mb-4 mt-4">เบอร์โทรศัพท์</label>
+									<input type="text" class="form-control form-control-register" id="tel">
+								</div>
+								<div class="mb-3">
+									<label for="idcard" class="form-label mt-4">ไฟล์เอกสารการสมัครสำเนาบัตรประชาชน</label>
+								</div>
+								<div class=" row ">
+									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="idcard"></div>
+									<div class="col-lg-2"><button class="btn btn-info btn-brown">Browse</button></div>
+								</div>
+								<div class="mb-3">
+									<label for="bookbank" class="form-label mt-4">ไฟล์เอกสารการสมัครสมุดบัญชี</label>
+								</div>
+								<div class=" row ">
+									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="bookbank"></div>
+									<div class="col-lg-2"><button class="btn btn-info btn-brown">Browse</button></div>
+								</div>
+								<div class="mb-3">
+									<label for="address" class="form-label mb-4 mt-4">รายละเอียดที่อยู่ (ห้องเลขที่,ตึก,ถนน)</label>
+									<input type="text" class="form-control form-control-register" id="address">
+								</div>
+								<div class=" row ">
+									<div class="col-6"><label for="province" class="form-label mt-4">จังหวัด</label></div>
+									<div class="col-6"><label for="district" class="form-label mt-4">เขต/อำเภอ</label></div>
+								</div>
+								<div class=" row ">
+									<div class="col-6">
+										<select class="form-select form-select-lg mb-3 form-control-register" id="province" aria-label=".form-select-lg example">
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										  </select>
+									</div>
+									<div class="col-6">
+										<select class="form-select form-select-lg mb-3 form-control-register" id="district"aria-label=".form-select-lg example">
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										  </select>
+									</div>
+								</div>
+								<div class=" row ">
+									<div class="col-6"><label for="subdistrict" class="form-label mt-4">แขวง/ตำบล</label></div>
+									<div class="col-6"><label for="zipcode" class="form-label mt-4">รหัสไปรษณีย์</label></div>
+								</div>
+								<div class=" row ">
+									<div class="col-6">
+										<select class="form-select form-select-lg mb-3 form-control-register" id="subdistrict" aria-label=".form-select-lg example">
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										  </select>
+									</div>
+									<div class="col-6">
+										<input type="text" class="form-control form-control-register" id="zipcode">
+									</div>
+								</div>
+								<div class="mb-3">
+									<label for="address" class="form-label  mt-4">นามปากกา</label>
+								</div>
+								<div class=" row ">
+									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="bookbank"></div>
+									<div class="col-lg-2"><button class="btn btn-danger">-</button></div>
+								</div>
+								<div class="mb-3 mt-3 text-center">
+									<button class="btn btn-info">เพิ่มนามปากกา</button>
+								</div>
+								<div class="mb-3">
+									<label for="address" class="form-label mt-4">สำนักพิมพ์</label>
+								</div>
+								<div class=" row ">
+									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="bookbank"></div>
+									<div class="col-lg-2"><button class="btn btn-danger">-</button></div>
+								</div>
+								<div class="mb-3 mt-3 text-center">
+									<button class="btn btn-info">เพิ่มนามปากกา</button>
+								</div>
+								<div class="mb-5 mt-5 text-center">
+									<button class="btn btn-info">ยกเลิก</button>
+									<button class="btn btn-info ms-5">บันทึก</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<img  id="backtotop" src="assets/images/arrow_up_circle_white.png">
@@ -70,37 +191,35 @@
 						<div class="font_footer_regular">
 							Lorem Ipsum Dolor
 						</div>
-							<div class="row">
-								<div class="col-xl-1 col-lg-1" class="mb-2">
-									<i class="fa-solid fa-location-dot"></i>
-								</div>
-								<div class="col-xl-2 col-lg-11" class="mb-2">
-									ที่ตั้ง: 
-								</div>
-								<div class="col-xl-9 col-lg-12" class="mb-2">
-									เลขที่ 1 อาคารซี.พี.ทาวเวอร์ 2 ชั้น 26 ห้อง บี 2 <br>ถนนรัชดาภิเสก แขวง ดินแดง เขต ดินแดง <br>กทม. 10400
-								</div>
-								<div class="col-xl-1 col-lg-1" class="mb-2">
-									<i class="fa-solid fa-envelope"></i>
-								</div>
-								<div class="col-xl-2 col-lg-11" class="mb-2">
-									อีเมล:
-								</div>
-								<div class="col-xl-9 col-lg-12" class="mb-2">
-									bookz.team@gmail.com
-								</div>
-								<div class="col-xl-1 col-lg-1" class="mb-2">
-									<i class="fa-solid fa-phone"></i>
-								</div>
-								<div class="col-xl-3 col-lg-11" class="mb-2">
-									เบอร์โทรศัพท์:
-								</div>
-								<div class="col-xl-8 col-lg-12" class="mb-2">
-									02-070-2255
-								</div>
+						<div class="row">
+							<div class="col-xl-1 col-lg-1" class="mb-2">
+								<i class="fa-solid fa-location-dot"></i>
 							</div>
-						
-
+							<div class="col-xl-2 col-lg-11" class="mb-2">
+								ที่ตั้ง: 
+							</div>
+							<div class="col-xl-9 col-lg-12" class="mb-2">
+								เลขที่ 1 อาคารซี.พี.ทาวเวอร์ 2 ชั้น 26 ห้อง บี 2 <br>ถนนรัชดาภิเสก แขวง ดินแดง เขต ดินแดง <br>กทม. 10400
+							</div>
+							<div class="col-xl-1 col-lg-1" class="mb-2">
+								<i class="fa-solid fa-envelope"></i>
+							</div>
+							<div class="col-xl-2 col-lg-11" class="mb-2">
+								อีเมล:
+							</div>
+							<div class="col-xl-9 col-lg-12" class="mb-2">
+								bookz.team@gmail.com
+							</div>
+							<div class="col-xl-1 col-lg-1" class="mb-2">
+								<i class="fa-solid fa-phone"></i>
+							</div>
+							<div class="col-xl-3 col-lg-11" class="mb-2">
+								เบอร์โทรศัพท์:
+							</div>
+							<div class="col-xl-8 col-lg-12" class="mb-2">
+								02-070-2255
+							</div>
+						</div>
 					</div>
 					<div class="col-xl-1  d-xl-block d-lg-none  d-md-none d-sm-none">
 
