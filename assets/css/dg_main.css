@@ -111,8 +111,15 @@ span.carousel-control-prev-icon {
 /* main set */
 .register-container
 {
-    background-color: #fefefc;
+    background-color: #fcf8f5;
 }
+
+
+.mainregister
+{
+    background-color: #fcf8f5;
+}
+
 
 #new_book
 {
@@ -178,7 +185,7 @@ span.carousel-control-prev-icon {
     background-color: #fefdfb;
     width: 40px;
     /* border: 1px solid black; */
-    box-shadow: 0 0px 40px rgba(51, 51, 51, 0.1);
+    box-shadow: 0 0px 5px rgba(51, 51, 51, 0.1);
     -webkit-filter: drop-shadow(1px 1px 1px #222);
     filter: drop-shadow(1px 1px 1px #222);
 }
@@ -200,7 +207,7 @@ span.carousel-control-prev-icon {
 {
     height: 60px;
     border-radius: 15px;
-    box-shadow: 0 0px 40px rgba(51, 51, 51, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     -webkit-filter: drop-shadow(0.5px 0.5px 0.5px #815d51);
     filter: drop-shadow(0.5px 0.5px 0.5px #815d51);
 }
@@ -222,11 +229,87 @@ span.carousel-control-prev-icon {
     border-color:#815d51;
 }
 
+
 .select-register{
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
     background-image: url("../images/arrow_ddl2.png");
+    background-size: 20px 10px;
+}
+
+.delete-item
+{
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    margin-top: -48px;
+    color: red;
+    border: 3px solid red;
+    padding: 0px 11px;
+    border-radius: 30px;
+    font-size: 22px;
+}
+
+.btn-add-item
+{
+    margin-top:10px;
+    font-size: 18px;
+    width: 30%;
+    height: 45px;
+    border-radius: 30px;
+    background-color:white;
+    border-color:white;
+    color: #815d51;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   
+}
+
+.fa-plus
+{
+    border: 1px solid #815d51;
+    padding: 0px 4px;
+    border-radius: 30px;
+}
+
+.btn-save-form
+{
+    margin-left:20px;
+    width: 15%;
+    height: 50px;
+    border-radius: 8px;
+    background-color:#815d51;
+    border-color:#815d51;
+    color: white;
+}
+
+.btn-save-form:hover
+{
+    background-color:#815d51;
+    border-color:#815d51;
+    color: white;
+}
+
+.btn-cancel-form
+{
+    margin-left:20px;
+    width: 15%;
+    height: 50px;
+    border-radius: 8px;
+    background-color:#c8c9cb;
+    border-color:#c8c9cb;
+    color: white;
+}
+
+.btn-cancel-form:hover
+{
+    background-color:#c8c9cb;
+    border-color:#c8c9cb;
+    color: white;
 }
 
 /* promotion card set */

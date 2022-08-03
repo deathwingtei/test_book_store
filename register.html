@@ -15,6 +15,24 @@
     <title>Test Book Store</title>
 </head>
 <body>
+	<!-- Modal -->
+	<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="successModalLabel">Modal title</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			...
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+		</div>
+	</div>
 	<header>
 		<nav class="navbar navbar-expand-lg bg-white">
 			<div class="container-fluid">
@@ -52,7 +70,7 @@
 			</div>
 		</nav>
 	</header>
-	<main>
+	<main class="mainregister">
 		<div id="mainslide" class="carousel slide" data-bs-ride="true">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
@@ -68,9 +86,9 @@
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<div class="card main-input-form-card p-5 m-5">
+					<div class="card main-input-form-card ps-5 pe-5 pt-5 pb-1 m-5">
 						<div class="card-body">
-							<form>
+							<form id="mainform" enctype="multipart/form-data">
 								<div class="mb-3">
 									<label for="name" class="form-label mb-4 ">ชื่อ</label>
 									<input type="text" class="form-control form-control-register" id="name">
@@ -93,14 +111,16 @@
 								</div>
 								<div class=" row ">
 									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="idcard"></div>
-									<div class="col-lg-2"><button class="btn btn-info btn-brown">Browse</button></div>
+									<div class="col-lg-2"><button id="idcard_browse" class="btn btn-info btn-brown">Browse</button></div>
+									<input type="file" id="idcard_file" style="display:none;">
 								</div>
 								<div class="mb-3">
 									<label for="bookbank" class="form-label mt-4">ไฟล์เอกสารการสมัครสมุดบัญชี</label>
 								</div>
 								<div class=" row ">
 									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="bookbank"></div>
-									<div class="col-lg-2"><button class="btn btn-info btn-brown">Browse</button></div>
+									<div class="col-lg-2"><button id="bookbank_browse" class="btn btn-info btn-brown">Browse</button></div>
+									<input type="file" id="bookbank_file" style="display:none;">
 								</div>
 								<div class="mb-3">
 									<label for="address" class="form-label mb-4 mt-4">รายละเอียดที่อยู่ (ห้องเลขที่,ตึก,ถนน)</label>
@@ -113,7 +133,7 @@
 								<div class=" row ">
 									<div class="col-6">
 										<select class="form-select form-select-lg mb-3 form-control-register select-register" id="province" aria-label=".form-select-lg example">
-											<option selected>Open this select menu</option>
+											<option selected></option>
 											<option value="1">One</option>
 											<option value="2">Two</option>
 											<option value="3">Three</option>
@@ -121,7 +141,7 @@
 									</div>
 									<div class="col-6">
 										<select class="form-select form-select-lg mb-3 form-control-register select-register" id="district"aria-label=".form-select-lg example">
-											<option selected>Open this select menu</option>
+											<option selected></option>
 											<option value="1">One</option>
 											<option value="2">Two</option>
 											<option value="3">Three</option>
@@ -135,7 +155,7 @@
 								<div class=" row ">
 									<div class="col-6">
 										<select class="form-select form-select-lg mb-3 form-control-register select-register" id="subdistrict" aria-label=".form-select-lg example">
-											<option selected>Open this select menu</option>
+											<option selected></option>
 											<option value="1">One</option>
 											<option value="2">Two</option>
 											<option value="3">Three</option>
@@ -148,26 +168,26 @@
 								<div class="mb-3">
 									<label for="address" class="form-label  mt-4">นามปากกา</label>
 								</div>
-								<div class=" row ">
-									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="bookbank"></div>
-									<div class="col-lg-2"><button class="btn btn-danger">-</button></div>
+								<div class="mb-3">
+									<input type="text" class="form-control form-control-register" id="aka">
+									<div class="delete-item delete-aka">-</div>
 								</div>
 								<div class="mb-3 mt-3 text-center">
-									<button class="btn btn-info">เพิ่มนามปากกา</button>
+									<button class="btn btn-add-item btn-add-aka"><i class="fa-regular fa-plus"></i> เพิ่มนามปากกา</button>
 								</div>
 								<div class="mb-3">
 									<label for="address" class="form-label mt-4">สำนักพิมพ์</label>
 								</div>
-								<div class=" row ">
-									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="bookbank"></div>
-									<div class="col-lg-2"><button class="btn btn-danger">-</button></div>
+								<div class=" mb-3 ">
+									<input type="text" class="form-control form-control-register" id="publisher">
+									<div class="delete-item delete-aka">-</div>
 								</div>
 								<div class="mb-3 mt-3 text-center">
-									<button class="btn btn-info">เพิ่มนามปากกา</button>
+									<button class="btn btn-add-item btn-add-publisher"><i class="fa-regular fa-plus"></i> เพิ่มสำนักพิมพ์</button>
 								</div>
 								<div class="mb-5 mt-5 text-center">
-									<button class="btn btn-info">ยกเลิก</button>
-									<button class="btn btn-info ms-5">บันทึก</button>
+									<button class="btn btn-cancel-form">ยกเลิก</button>
+									<button class="btn btn-save-form  ms-5"  data-bs-toggle="modal" data-bs-target="#successModal">บันทึก</button>
 								</div>
 							</form>
 						</div>
@@ -261,4 +281,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="assets/js/dg_main.js"></script>
+<script src="assets/js/dg_register.js"></script>
+
 </html>
