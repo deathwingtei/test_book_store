@@ -373,6 +373,7 @@ span.carousel-control-prev-icon {
     border: none !important;
 }
 
+
 /* search set */
 
 #search
@@ -854,6 +855,11 @@ footer
         margin-bottom:30px !important;
         margin-top:30px !important;
     }
+    .img_w_ribbon
+    {
+        max-width: 305px;
+    }
+
 }
 
 
