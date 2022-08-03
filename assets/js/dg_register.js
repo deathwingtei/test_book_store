@@ -25,6 +25,58 @@ successModal.addEventListener('shown.bs.modal', function () {
   
 });
 
+document.querySelector(".btn-add-aka").onclick = function() {  
+    const date = new Date().getTime(); 
+    const randNum = Math.floor(Math.random() * 1000);
+    const numofdiv = date+""+randNum;
+    let app = document.querySelector('#aka_container');
+    let nodes = "";
+    nodes += '<div class="mb-3" id="aka_div_'+numofdiv+'">';
+    nodes += '<input type="text" class="form-control form-control-register aka_input" data-id="'+numofdiv+'" id="aka_'+numofdiv+'">';
+	nodes += '<div class="delete-item delete-aka" data-id="'+numofdiv+'" id="del_aka_'+numofdiv+'">-</div>';
+    nodes += '</div>';
+    app.innerHTML += nodes;
+
+    let items = document.querySelectorAll('.delete-aka')
+
+    items.forEach((el) => {
+        el.addEventListener('click', function(){
+            const del_id = this.getAttribute('data-id');
+            document.querySelector('#aka_div_'+del_id).remove();
+
+        })
+    });
+
+    return false;
+};  
+
+
+document.querySelector(".btn-add-publisher").onclick = function() {  
+    const date = new Date().getTime(); 
+    const randNum = Math.floor(Math.random() * 1000);
+    const numofdiv = date+""+randNum;
+    let app = document.querySelector('#publisher_container');
+    let nodes = "";
+    nodes += '<div class="mb-3"  id="publisher_div_'+numofdiv+'">';
+    nodes += '<input type="text" class="form-control form-control-register publisher_input" data-id="'+numofdiv+'" id="publisher_'+numofdiv+'">';
+	nodes += '<div class="delete-item delete-publisher" data-id="'+numofdiv+'" id="del_publisher_'+numofdiv+'">-</div>';
+    nodes += '</div>';
+    app.innerHTML += nodes;
+    
+    let items = document.querySelectorAll('.delete-publisher')
+
+    items.forEach((el) => {
+        el.addEventListener('click', function(){
+            const del_id = this.getAttribute('data-id');
+            document.querySelector('#publisher_div_'+del_id).remove();
+
+        })
+    });
+
+    return false;
+};  
+
+
 var idcardToRead = document.querySelector("#idcard_file");
 var bookbankToRead = document.querySelector("#bookbank_file");
 
@@ -47,3 +99,4 @@ bookbankToRead.addEventListener("change", function(event) {
         document.querySelector("#bookbank").value = files[0].name;
     }
 }, false);
+
