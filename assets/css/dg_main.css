@@ -183,6 +183,14 @@ span.carousel-control-prev-icon {
     filter: drop-shadow(1px 1px 1px #222);
 }
 
+.btn_arrow:hover
+{
+    border: none;
+    box-shadow: 0 0px 40px rgba(51, 51, 51, 0.1);
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
 #emailHelp
 {
     color: red;
@@ -205,12 +213,20 @@ span.carousel-control-prev-icon {
     border-radius: 15px;
     background-color:#815d51;
     border-color:#815d51;
+    color: white;
 }
 
 .btn-brown:hover
 {
     background-color:#815d51;
     border-color:#815d51;
+}
+
+.select-register{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background-image: url("../images/arrow_ddl2.png");
 }
 
 /* promotion card set */
