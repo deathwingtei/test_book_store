@@ -18,19 +18,14 @@
 	<!-- Modal -->
 	<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-			<h5 class="modal-title" id="successModalLabel">Modal title</h5>
-			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			<div class="modal-content">
+				<div class="modal-body modal-body-success">
+					<i class="fa-regular fa-circle-check"></i><br><br>
+						สมัครเป็นนักเขียนเรียบร้อย<br>
+						กรุณารอการอนุมัติจากผู้ดูแลระบบระบบจะส่งข้อมูลไปทางอีเมล<br><br>
+					<button class="btn btn-brown2" data-bs-dismiss="modal">ตกลง</button>
+				</div>
 			</div>
-			<div class="modal-body">
-			...
-			</div>
-			<div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-			<button type="button" class="btn btn-primary">Save changes</button>
-			</div>
-		</div>
 		</div>
 	</div>
 	<header>
@@ -111,7 +106,7 @@
 								</div>
 								<div class=" row ">
 									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="idcard"></div>
-									<div class="col-lg-2"><button id="idcard_browse" class="btn btn-info btn-brown">Browse</button></div>
+									<div class="col-lg-2"><button id="idcard_browse" class="  btn-brown">Browse</button></div>
 									<input type="file" id="idcard_file" style="display:none;">
 								</div>
 								<div class="mb-3">
@@ -119,7 +114,7 @@
 								</div>
 								<div class=" row ">
 									<div class="col-lg-10"><input type="text" class="form-control form-control-register" id="bookbank"></div>
-									<div class="col-lg-2"><button id="bookbank_browse" class="btn btn-info btn-brown">Browse</button></div>
+									<div class="col-lg-2"><button id="bookbank_browse" class="  btn-brown">Browse</button></div>
 									<input type="file" id="bookbank_file" style="display:none;">
 								</div>
 								<div class="mb-3">
@@ -127,11 +122,8 @@
 									<input type="text" class="form-control form-control-register" id="address">
 								</div>
 								<div class=" row ">
-									<div class="col-6"><label for="province" class="form-label mt-4">จังหวัด</label></div>
-									<div class="col-6"><label for="district" class="form-label mt-4">เขต/อำเภอ</label></div>
-								</div>
-								<div class=" row ">
-									<div class="col-6">
+									<div class="col-lg-6">
+										<label for="province" class="form-label mt-4">จังหวัด</label>
 										<select class="form-select form-select-lg mb-3 form-control-register select-register" id="province" aria-label=".form-select-lg example">
 											<option selected></option>
 											<option value="1">One</option>
@@ -139,7 +131,8 @@
 											<option value="3">Three</option>
 										  </select>
 									</div>
-									<div class="col-6">
+									<div class="col-lg-6">
+										<label for="district" class="form-label mt-4">เขต/อำเภอ</label>
 										<select class="form-select form-select-lg mb-3 form-control-register select-register" id="district"aria-label=".form-select-lg example">
 											<option selected></option>
 											<option value="1">One</option>
@@ -149,11 +142,8 @@
 									</div>
 								</div>
 								<div class=" row ">
-									<div class="col-6"><label for="subdistrict" class="form-label mt-4">แขวง/ตำบล</label></div>
-									<div class="col-6"><label for="zipcode" class="form-label mt-4">รหัสไปรษณีย์</label></div>
-								</div>
-								<div class=" row ">
-									<div class="col-6">
+									<div class="col-lg-6">
+										<label for="subdistrict" class="form-label mt-4">แขวง/ตำบล</label>
 										<select class="form-select form-select-lg mb-3 form-control-register select-register" id="subdistrict" aria-label=".form-select-lg example">
 											<option selected></option>
 											<option value="1">One</option>
@@ -161,7 +151,8 @@
 											<option value="3">Three</option>
 										  </select>
 									</div>
-									<div class="col-6">
+									<div class="col-lg-6">
+										<label for="zipcode" class="form-label mt-4">รหัสไปรษณีย์</label>
 										<input type="text" class="form-control form-control-register" id="zipcode">
 									</div>
 								</div>
@@ -173,7 +164,7 @@
 									<div class="delete-item delete-aka">-</div>
 								</div>
 								<div class="mb-3 mt-3 text-center">
-									<button class="btn btn-add-item btn-add-aka"><i class="fa-regular fa-plus"></i> เพิ่มนามปากกา</button>
+									<button class="btn btn-add-item btn-add-aka"><i class="fa-regular fa-plus"></i> <span class="text-in-btn">เพิ่มนามปากกา</span></button>
 								</div>
 								<div class="mb-3">
 									<label for="address" class="form-label mt-4">สำนักพิมพ์</label>
@@ -183,11 +174,13 @@
 									<div class="delete-item delete-aka">-</div>
 								</div>
 								<div class="mb-3 mt-3 text-center">
-									<button class="btn btn-add-item btn-add-publisher"><i class="fa-regular fa-plus"></i> เพิ่มสำนักพิมพ์</button>
+									<button class="btn btn-add-item btn-add-publisher"><i class="fa-regular fa-plus"></i> <span class="text-in-btn">เพิ่มสำนักพิมพ์</span></button>
 								</div>
-								<div class="mb-5 mt-5 text-center">
-									<button class="btn btn-cancel-form">ยกเลิก</button>
-									<button class="btn btn-save-form  ms-5"  data-bs-toggle="modal" data-bs-target="#successModal">บันทึก</button>
+								<div class="row mb-5 mt-5 text-center">
+									<div class="col-lg-4"></div>
+									<div class="col-lg-2"><button class=" btn-cancel-form mt-2 mb-2">ยกเลิก</button></div>
+									<div class="col-lg-2"><button class=" btn-save-form mt-2 mb-2"  data-bs-toggle="modal" data-bs-target="#successModal">บันทึก</button></div>
+									<div class="col-lg-4"></div>
 								</div>
 							</form>
 						</div>

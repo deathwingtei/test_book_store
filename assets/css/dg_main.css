@@ -221,12 +221,32 @@ span.carousel-control-prev-icon {
     background-color:#815d51;
     border-color:#815d51;
     color: white;
+    font-size:1rem;
+}
+
+.btn-brown2
+{
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+    background-color:#815d51;
+    border-color:#815d51;
+    color: white;
+    font-size:1rem;
 }
 
 .btn-brown:hover
 {
     background-color:#815d51;
     border-color:#815d51;
+    color: white;
+}
+
+.btn-brown2:hover
+{
+    background-color:#815d51;
+    border-color:#815d51;
+    color: white;
 }
 
 
@@ -256,7 +276,7 @@ span.carousel-control-prev-icon {
     margin-top:10px;
     font-size: 18px;
     width: 30%;
-    height: 45px;
+    height: 120%;
     border-radius: 30px;
     background-color:white;
     border-color:white;
@@ -278,8 +298,8 @@ span.carousel-control-prev-icon {
 
 .btn-save-form
 {
-    margin-left:20px;
-    width: 15%;
+    font-size: 1rem;
+    width: 100%;
     height: 50px;
     border-radius: 8px;
     background-color:#815d51;
@@ -296,8 +316,8 @@ span.carousel-control-prev-icon {
 
 .btn-cancel-form
 {
-    margin-left:20px;
-    width: 15%;
+    font-size: 1rem;
+    width: 100%;
     height: 50px;
     border-radius: 8px;
     background-color:#c8c9cb;
@@ -312,6 +332,26 @@ span.carousel-control-prev-icon {
     color: white;
 }
 
+.text-in-btn
+{
+    display: inline-flex;
+}
+
+#successModal
+{
+    position: fixed;
+    margin-top: 30vh;
+}
+.modal-body-success
+{
+    text-align: center;
+    padding:50px 30px 30px 30px;
+}
+.fa-circle-check
+{
+    color:#31983f;
+    font-size: 40px;
+}
 /* promotion card set */
 .setbody
 {
@@ -711,42 +751,42 @@ footer
 }
 
 .ribbon span.icon {
-background-color: #EA141F;
-box-shadow: 0 3px 10px -5px #000;
-color: #fff;
-display: block;
-font-weight: 600;
-left: -19px;
-line-height: 28px;
-position: absolute;
-top: -4px;
--webkit-transform: rotate(-45deg);
-transform: rotate(-45deg);
-width: 56px;
-text-align: center;
-font-size: 0.688rem;
+    background-color: #EA141F;
+    box-shadow: 0 3px 10px -5px #000;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    left: -19px;
+    line-height: 28px;
+    position: absolute;
+    top: -4px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 56px;
+    text-align: center;
+    font-size: 0.688rem;
 }
 
 .ribbon span::after,
 .ribbon span::before {
-border-bottom: 3px solid transparent;
-border-top: 3px solid #c7111a;
-content: " ";
-position: absolute;
-top: 100%;
-z-index: -1;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #c7111a;
+    content: " ";
+    position: absolute;
+    top: 100%;
+    z-index: -1;
 }
 
 .ribbon span::before {
-border-left: 3px solid #c7111a;
-border-top: 3px solid #c7111a;
-left: 0;
+    border-left: 3px solid #c7111a;
+    border-top: 3px solid #c7111a;
+    left: 0;
 }
 
 .ribbon span::after {
-border-right: 3px solid #c7111a;
-border-top: 3px solid #c7111a;
-right: 0;
+    border-right: 3px solid #c7111a;
+    border-top: 3px solid #c7111a;
+    right: 0;
 }
 
 /* Media screen */
@@ -784,6 +824,30 @@ right: 0;
     #search-content
     {
         height: auto;
+    }
+    /* .text-in-btn
+    {
+        display: none;
+    } */
+    .btn-add-item
+    {
+        width: 100%;
+    }
+    .btn-brown {
+        margin-left: 0px;
+    }
+    .main-input-form-card
+    {
+        padding:40px !important;
+        margin:0px !important;
+        margin-bottom:30px !important;
+        margin-top:30px !important;
+    }
+    .btn_arrow
+    {
+        margin:0px !important;
+        margin-bottom:30px !important;
+        margin-top:30px !important;
     }
 }
 
